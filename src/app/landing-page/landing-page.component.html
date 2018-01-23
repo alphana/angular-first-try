@@ -1,0 +1,17 @@
+<header id="header">
+  <app-landing-header></app-landing-header>
+</header>
+<div id="hero">
+
+  <div class="hero-container">
+
+
+    <h1>Welcome to Coupler</h1>
+    <h3>We are team of talanted designers making this DC visual</h3>
+    <button (click)="showLoginDialog(loginModal)" class="btn-get-started" >Let's Discover</button>
+
+  </div>
+</div>
+
+<app-login-dialog #loginModal id="loginModal" [show-modal]="isModalOpen" ></app-login-dialog>
+
